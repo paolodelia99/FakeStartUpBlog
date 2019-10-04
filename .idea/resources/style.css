@@ -1,106 +1,145 @@
+@media(min-width: 468px){
+    .main-container{
+        display: flex;
+        margin: 20px;
+    }
+
+    .secondary-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 40px 0;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 h1{
-    font: 20px bold Tahoma;
+    font: 20px bold "Raleway","Helvetica Neue",Arial,sans-serif;
 }
 
 h2{
-    font: 14px bold Tahoma;
+    font: 18px bold "Raleway","Helvetica Neue",Arial,sans-serif;
 }
 
-header,section,footer,aside,nav,article,hgroup{
-    display: block;
+h3{
+    font: 14px bold "Raleway","Helvetica Neue",Arial,sans-serif;
 }
 
 body{
-    width: 100%;
-    display: -webkit-box;
-    -webkit-box-pack: center;
+    margin: 20px 40px;
     background: #5d5d5d;
+    display: flex;
+    font-family: "Raleway","Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #030303;
 }
 
-#big-wrapper{
-    max-width: 1000px;
+header,section,footer,nav{
+    display: block;
+}
+
+.Container-1 div, .Container-2 div{
+    padding: 10px;
+}
+
+#main-header{
+    text-align: center;
+    background: white;
+    padding: 20px;
+}
+
+.big-wrapper{
+    /*max-width: 1000px;*/
     margin: 20px 0;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-box-flex: 1;
+    background: white;
 }
 
-#top-header{
+.main-container div{
+    min-height: 220px;
+}
+
+.secondary-container div{
+    min-height: 220px;
+    margin-bottom: 20px;
+}
+
+.top-header{
     background: #5d5d5d;
     padding: 20px;
     color: white;
 }
 
-#top-menu{
+.top-menu{
     background: #3d7a1b;
     color: white;
     min-height: 30px;
 }
 
-#top-menu li{
+.top-menu li{
     display: inline-block;
     list-style: none;
-    padding: 10px;
-    font: 16px bold Tahoma;
+    padding: 20px;
 }
 
-#top-menu a{
+.top-menu a{
+    font-size: 25px;
+    font-family: "Raleway","Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
     color: azure;
 }
 
-#meat-div{
-    display: -webkit-box;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    -webkit-box-orient: horizontal;
-    background: white;
+.main-container{
+    display: flex;
 }
 
-#main-section{
-    -webkit-box-flex: 1;
-    margin: 20px;
-    padding: 20px;
+.main-content-row{
+    flex: 3;
+    display: flex;
+    margin: 0 20px;
 }
 
-article{
-    margin: 20px;
-    padding: 20px;
+.ads-container-row{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
 }
 
-article footer{
-    text-align: right;
+.main-content-col{
+    flex: 2;
 }
 
-#side-news{
-    -webkit-box-flex: 0;
-    width: 200px;
-    margin: 20px 0;
-    padding: 30px;
-    background: azure;
-}
-
-#the-footer{
-    text-align: center;
-    padding: 20px;
-}
-
-.blog-article:nth-child(1st){
-    -webkit-box-flex: 2;
-}
-
-.blog-article:nth-child(n+1){
-    padding: 20px;
-    margin: 10px;
-    -webkit-box-orient: horizontal;
-}
-
-#startUp-img{
-    max-width:100%;
+.main-image{
+    flex: 1;
+    content: url("../resources/Impactfunhereswhatwerelearning-blog-792x596.jpg");
+    max-width:50%;
     height:auto;
 }
 
+.ads-container-col{
+
+}
+
+.ads-image{
+    content: url("../resources/google-ads.jpg");
+    max-width: 70%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container-2-box-row{
+    flex-basis: 30%;
+}
+
+.main-footer{
+    text-align: center;
+    padding: 20px;
+    background: #5d5d5d;
+}
