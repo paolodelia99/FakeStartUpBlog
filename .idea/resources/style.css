@@ -12,6 +12,8 @@
     }
 }
 
+
+/* Global */
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +31,12 @@ h3{
     font: 14px bold "Raleway","Helvetica Neue",Arial,sans-serif;
 }
 
+.header-container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
 body{
     margin: 20px 40px;
     background: #5d5d5d;
@@ -40,69 +48,251 @@ body{
     color: #030303;
 }
 
-header,section,footer,nav{
-    display: block;
-}
-
-.Container-1 div, .Container-2 div{
-    padding: 10px;
-}
-
-#main-header{
-    text-align: center;
-    background: white;
-    padding: 20px;
-}
-
 .big-wrapper{
-    /*max-width: 1000px;*/
     margin: 20px 0;
     background: white;
 }
 
-.main-container div{
-    min-height: 220px;
+header,section,footer,nav{
+    display: block;
+}
+/* Header */
+header{
+    background: #3d7a1b;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #085013 3px solid;
 }
 
-.secondary-container div{
-    min-height: 220px;
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Main section*/
+.main-section{
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:flex-start;
+  margin-top: 20px;
+}
+
+/* Main Container*/
+.main-container{
+    flex:3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 20px;
 }
 
-.top-header{
-    background: #5d5d5d;
-    padding: 20px;
-    color: white;
-}
-
-.top-menu{
-    background: #3d7a1b;
-    color: white;
-    min-height: 30px;
-}
-
-.top-menu li{
-    display: inline-block;
-    list-style: none;
-    padding: 20px;
-}
-
-.top-menu a{
-    font-size: 25px;
-    font-family: "Raleway","Helvetica Neue",Arial,sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: azure;
-}
-
-.main-container{
-    display: flex;
-}
-
-.main-content-row{
-    flex: 3;
-    display: flex;
+.main-article{
     margin: 0 20px;
+    display: block;
+    flex-basis: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.main-article img{
+  position: relative;
+  width: 100%;
+}
+
+.text-block{
+  position: absolute;
+  bottom: 10px;
+  left: 20%;
+  background-color: none;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  vertical-align: bottom;
+  margin-top: -40%;
+}
+
+.text-block h1 a span{
+  text-align: center;
+  color: white;
+  font: bold 45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+}
+
+.text-block h2 a span{
+  text-align: center;
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.text-block a {
+  text-decoration: none;
+}
+
+.main-article span.spacer {
+   padding:0 5px;
+}
+
+/*Secondary Boxes*/
+.container-2-box-row{
+  display: flex;
+  background: #FFFAFA;
+  border: 1px grey solid;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+  flex-basis: 40%;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+}
+
+.container-2-box-col{
+  display: block;
+}
+
+.container-2-box-col p{
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  line-height: 22px;
+}
+
+.container-2-box-col div{
+  float: right;
+  left: 75%;
+}
+/* Images*/
+.img-1{
+  float: right;
+  height: 200px;
+  width: 200px;
+  background: url("../resources/EuropeNewSiliconValley.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 30px 30px 30px;
+}
+
+.img-2{
+  float: right;
+  height: 200px;
+  width: 200px;
+  background: url("../resources/EuropeanResturant.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 30px 30px 30px;
+}
+
+.img-3{
+  float: right;
+  height: 200px;
+  width: 200px;
+  background: url("../resources/startup-300x200.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 30px 30px 30px;
+}
+
+.img-4{
+  float: right;
+  height: 200px;
+  width: 200px;
+  background: url("../resources/donald-trump-ai-initiative.001.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 30px 30px 30px;
+}
+
+.img-5{
+  float: right;
+  height: 200px;
+  width: 200px;
+  background: url("../resources/how-small-businesses-can-benefit-from-ai-now.001.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 30px 30px 30px;
+}
+
+.img-6{
+  float: right;
+  height: 200px;
+  width: 200px;
+  background: url("../resources/retail-visual-branding-marketing-150x150.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 30px 30px 30px;
+}
+
+/* Sidebar*/
+.sidebar{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  padding:10px 0;
+}
+
+.side-news{
+  border-bottom: 1px grey solid;
+  margin: 5px 5px;
+  display: block;
+}
+
+.continue-reading{
+  text-decoration: none;
+  color: #A52A2A;
+  float: right;
 }
 
 .ads-container-row{
@@ -112,32 +302,24 @@ header,section,footer,nav{
     align-items:center;
 }
 
-.main-content-col{
-    flex: 2;
+.ads-container-col h3{
+  font: 25px bold Helvetica, Sans-Serif;
 }
 
-.main-image{
-    flex: 1;
-    content: url("../resources/Impactfunhereswhatwerelearning-blog-792x596.jpg");
-    max-width:50%;
-    height:auto;
-}
-
-.ads-container-col{
-
+.ads-container-col a{
+  text-decoration: none;
+  font: 20px bold Helvetica, Sans-Serif;
+  color: black;
 }
 
 .ads-image{
-    content: url("../resources/google-ads.jpg");
+    content: url("../resources/google_ads.jpg");
     max-width: 70%;
     height: auto;
     vertical-align: middle;
 }
 
-.container-2-box-row{
-    flex-basis: 30%;
-}
-
+/* Footer*/
 .main-footer{
     text-align: center;
     padding: 20px;
