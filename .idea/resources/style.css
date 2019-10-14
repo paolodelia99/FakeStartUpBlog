@@ -96,6 +96,16 @@ header a:hover{
     font-weight: bold;
 }
 
+header .current a{
+    color: 	#F8F8FF;
+    font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 /* Main section*/
 .main-section{
   background: white;
@@ -116,7 +126,7 @@ header a:hover{
 }
 
 .main-article{
-    margin: 0 20px;
+    margin: 20px 20px;
     display: block;
     flex-basis: 100%;
     position: relative;
@@ -283,6 +293,10 @@ header a:hover{
   padding:10px 0;
 }
 
+.news h2{
+    font: 45px bold Helvetica, Sans-Serif;
+}
+
 .side-news{
   border-bottom: 1px grey solid;
   margin: 5px 5px;
@@ -292,7 +306,6 @@ header a:hover{
 .continue-reading{
   text-decoration: none;
   color: #A52A2A;
-  float: right;
 }
 
 .ads-container-row{
@@ -300,10 +313,12 @@ header a:hover{
     display: flex;
     flex-direction:column;
     align-items:center;
+    margin: 40px 0;
 }
 
 .ads-container-col h3{
   font: 25px bold Helvetica, Sans-Serif;
+  font-weight: 300;
 }
 
 .ads-container-col a{
@@ -317,6 +332,15 @@ header a:hover{
     max-width: 70%;
     height: auto;
     vertical-align: middle;
+}
+
+/*About Us page*/
+
+.admin{
+  background-color: 	#006400;
+  color: white;
+  flex-basis: 100%;
+  flex-direction: column;
 }
 
 /* Footer*/
