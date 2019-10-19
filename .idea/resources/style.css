@@ -114,6 +114,7 @@ a{
   justify-content:space-around;
   align-items:flex-start;
   margin-top: 20px;
+  padding: 20px;
 }
 
 /* Main Container*/
@@ -186,7 +187,7 @@ a{
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
-  flex-basis: 40%;
+  flex-basis: 45%;
   padding: 20px 20px;
   margin-bottom: 30px;
 }
@@ -207,82 +208,55 @@ a{
   left: 75%;
 }
 /* Images*/
-.img-1{
+.img{
   float: right;
   height: 200px;
   width: 200px;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 30px 30px 30px;
+}
+
+#img-1{
   background: url("../resources/EuropeNewSiliconValley.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  shape-outside: circle();
-  margin: 30px 30px 30px 30px;
 }
 
-.img-2{
-  float: right;
-  height: 200px;
-  width: 200px;
+#img-2{
   background: url("../resources/EuropeanResturant.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  shape-outside: circle();
-  margin: 30px 30px 30px 30px;
 }
 
-.img-3{
-  float: right;
-  height: 200px;
-  width: 200px;
+#img-3{
   background: url("../resources/startup-300x200.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  shape-outside: circle();
-  margin: 30px 30px 30px 30px;
 }
 
-.img-4{
-  float: right;
-  height: 200px;
-  width: 200px;
+#img-4{
   background: url("../resources/donald-trump-ai-initiative.001.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  shape-outside: circle();
-  margin: 30px 30px 30px 30px;
 }
 
-.img-5{
-  float: right;
-  height: 200px;
-  width: 200px;
+#img-5{
   background: url("../resources/how-small-businesses-can-benefit-from-ai-now.001.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  shape-outside: circle();
-  margin: 30px 30px 30px 30px;
 }
 
-.img-6{
-  float: right;
-  height: 200px;
-  width: 200px;
+#img-6{
   background: url("../resources/retail-visual-branding-marketing-150x150.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  shape-outside: circle();
-  margin: 30px 30px 30px 30px;
 }
 
 /* Sidebar*/
@@ -334,13 +308,247 @@ a{
     vertical-align: middle;
 }
 
-/*About Us page*/
+/*ABOUT US PAGE*/
 
 .admin{
-  background-color: 	#006400;
+  background-color: #006400;
   color: white;
   flex-basis: 100%;
   flex-direction: column;
+}
+
+.admin-col div{
+  float: left;
+  right: 75%;
+}
+
+#photo-1{
+  background: url("../resources/user_defeault.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#photo-2{
+  background: url("../resources/user_profile_female.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo{
+  float: right;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 30px 30px 30px;
+}
+
+/* EVENTS PAGE*/
+
+/* calendar container*/
+#center-calendar{
+  flex:3;
+  order: 2;
+  display: block;
+  min-height: 500px;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.googleCalendar{
+  position: relative;
+  width:100%;
+  height: auto;
+  padding-bottom: 100%;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* calendar container*/
+.events-container{
+  flex: 1;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.event{
+  border-bottom: 1px grey solid;
+  margin: 5px 5px;
+  display: block;
+}
+
+.event h3{
+  font: 20px bold Helvetica, Sans-Serif;
+}
+
+.date{
+  color: grey;
+}
+
+#other-events{
+  color: #A52A2A;
+  font-weight: 900;
+}
+
+/* optins event container*/
+.options-events-container{
+  flex: 1;
+  order: 3;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.options-events-container fieldset{
+  border: 0;
+}
+
+.options-events-container h3{
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.options-events-container input:checked{
+  background-color: inherit;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+}
+
+/* VIDEOS PAGE*/
+
+#video-page{
+  position: relative;
+  display: block;
+}
+
+/* research bar container*/
+
+.research-bar-container{
+  position: relative;
+  height: 48px;
+  width: 30%;
+  padding: 0 30px;
+  background: #009432;
+  border-radius: 40px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  left: 30%;
+  right: 0;
+}
+
+.research-bar-container:hover > .search-text{
+  width: 85%;
+  padding: 0 5px;
+}
+
+.research-bar-container:hover > .search-btn{
+  background: #A3CB38;
+}
+
+.search-btn{
+  color: #006266;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #009432;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.search-text{
+  border: none;
+  background: none;
+  outline-color: none;
+  float: left;
+  padding: 0;
+  margin: 4px 0;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 35px;
+  width: 0px;
+}
+/* video container*/
+.video-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.video{
+  flex-basis: 27%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  align-self: center;
+  max-height: 450px;
+}
+
+.video h2{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 450px;
+}
+
+.video-title:hover {
+  color: #5A5858;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: relative;
+  z-index: 1;
+  top: 100%;
+  left: 30%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.img-video{
+  background: url("../resources/Webp.net-resizeimage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  min-height: 300px;
 }
 
 /* Footer*/
